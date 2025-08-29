@@ -7,7 +7,6 @@ export default function AboutMe() {
       <h2 className="about-title">About Me</h2>
 
       <div className="about-content">
-
         <div className="about-image">
           <img src={vivekImage} alt="Vivek S Hegde" />
         </div>
