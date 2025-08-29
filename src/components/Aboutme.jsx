@@ -11,7 +11,6 @@ export default function AboutMe() {
         <div className="about-image">
           <img src={vivekImage} alt="Vivek S Hegde" />
         </div>
-
         <div className="about-description">
           <p>
             I’m a Computer Science graduate student at the University of Texas
