@@ -5,7 +5,6 @@ export default function AboutMe() {
   return (
     <div id="aboutme" className="about-container">
       <h2 className="about-title">About Me</h2>
-
       <div className="about-content">
         <div className="about-image">
           <img src={vivekImage} alt="Vivek S Hegde" />
@@ -42,7 +41,6 @@ export default function AboutMe() {
             technology.
           </p>
         </div>
-
       </div>
     </div>
   );

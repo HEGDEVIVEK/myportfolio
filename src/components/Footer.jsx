@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="footer">
       <hr className="footer-divider" />
       <div className="footer-content">
-        <p>© 2025 Vivek S Hegde. All rights reserved.</p>
+        <p>© 2025 Vivek Hegde. All rights reserved.</p>
         <p>
           Built with <span>React</span> by <span>Vivek S Hegde</span>
         </p>
