@@ -1,0 +1,173 @@
+.projects-container {
+  background-color: #f9fafb;
+  padding: 70px 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  body.dark-mode & {
+    background-color: #1f2937; // dark background
+  }
+}
+
+.projects-title {
+  font-size: 26px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  color: #111827; // deep gray for better than pure black
+
+  body.dark-mode & {
+    color: #f9fafb; // near-white
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 3px;
+    background: #2563eb; // blue underline
+    margin: 8px auto 0;
+    border-radius: 2px;
+
+    body.dark-mode & {
+      background: #60a5fa; // lighter blue in dark
+    }
+  }
+}
+
+.projects-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 65px; // more spacing
+  padding: 50px;
+  justify-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  color: #1e293b; // slate gray text
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #e5e7eb; // light gray border
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+
+  body.dark-mode & {
+    background-color: #111827; // slate
+    color: #e5e7eb; // light text
+    border-color: #374151; // dark gray border
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: #8b5cf6; // purple accent
+    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.25); // subtle glow
+  }
+}
+
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.project-icon {
+  font-size: 16px;
+  background: rgba(139, 92, 246, 0.12); // purple tint bg
+  padding: 6px;
+  border-radius: 8px;
+  color: #8b5cf6; // purple accent
+
+  body.dark-mode & {
+    background: rgba(139, 92, 246, 0.25);
+    color: #c4b5fd; // lighter purple
+  }
+}
+
+.project-badge {
+  background: rgba(37, 99, 235, 0.15); // light blue bg
+  color: #2563eb; // blue text
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+
+  body.dark-mode & {
+    background: rgba(59, 130, 246, 0.25);
+    color: #93c5fd; // soft blue
+  }
+}
+
+.project-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-align: left;
+  color: #111827;
+
+  body.dark-mode & {
+    color: #f9fafb;
+  }
+}
+
+.project-description {
+  font-size: 0.95rem;
+  margin: 10px 0;
+  line-height: 1.5;
+  color: #334155;
+
+  body.dark-mode & {
+    color: #e2e8f0;
+  }
+}
+
+.project-tags {
+  margin-bottom: 10px;
+
+  .tag {
+    background: #f1f5f9;
+    color: #334155;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    margin: 4px;
+    display: inline-block;
+
+    body.dark-mode & {
+      background: #374151;
+      color: #f1f5f9;
+    }
+  }
+}
+
+.project-footer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #2563eb; // link-like color
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: #1e40af; // darker blue
+    font-weight: 600;
+  }
+
+  body.dark-mode & {
+    color: #93c5fd;
+
+    &:hover {
+      color: #60a5fa;
+    }
+  }
+}

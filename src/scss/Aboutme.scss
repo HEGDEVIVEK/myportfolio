@@ -1,0 +1,53 @@
+.about-container {
+  min-height: 100vh;
+  background-color: #f9fafb; // light gray for contrast
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 1.5rem 2.5rem;
+  text-align: center;
+
+  body.dark-mode & {
+    background-color: #1f2937; // dark background
+  }
+}
+
+.about-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #111827; // darker title color
+
+  body.dark-mode & {
+    color: #f9fafb; // light text in dark mode
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 3px;
+    background: #2563eb; // blue underline
+    margin: 8px auto 0;
+    border-radius: 2px;
+
+    body.dark-mode & {
+      background: #60a5fa; // lighter blue in dark
+    }
+  }
+}
+
+.about-description {
+  max-width: 768px;
+  color: #374151; 
+  font-size: 1.125rem;
+  line-height: 1.8rem;
+
+  p {
+    margin-bottom: 1.5rem; // spacing between paragraphs
+  }
+
+  body.dark-mode & {
+    color: #d1d5db; // gray-300 for readability in dark mode
+  }
+}

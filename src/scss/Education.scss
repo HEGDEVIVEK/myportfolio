@@ -1,0 +1,166 @@
+.education-container {
+  background: #f9fafb;
+  padding: 70px 80px;
+  text-align: center;
+
+  body.dark-mode & {
+    background: #1f2937; // dark background
+  }
+
+  .section-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: inline-block;
+    color: #111827; // deep gray (instead of pure black)
+
+    body.dark-mode & {
+      color: #f9fafb; // near white
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 80%;
+      height: 3px;
+      background: #2563eb; // blue accent underline
+      margin: 8px auto 0;
+      border-radius: 2px;
+
+      body.dark-mode & {
+        background: #60a5fa; // softer blue
+      }
+    }
+  }
+
+  .education-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .education-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    color: #1e293b; // slate text
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #e5e7eb; // subtle border
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+
+    body.dark-mode & {
+      background-color: #111827; // slate gray
+      color: #e5e7eb; // light text
+      border-color: #374151;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      border-color: #8b5cf6; // purple accent
+      box-shadow: 0 8px 20px rgba(139, 92, 246, 0.25);
+    }
+
+    .education-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 15px;
+
+      .education-left {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .education-icon {
+          font-size: 24px;
+          color: #2563eb; // blue accent (graduation cap)
+
+          body.dark-mode & {
+            color: #93c5fd; // softer blue
+          }
+        }
+
+        .degree-school {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+
+          .degree {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+            color: #111827;
+
+            body.dark-mode & {
+              color: #f9fafb;
+            }
+          }
+
+          .school {
+            font-size: 14px;
+            color: #475569; // muted slate
+
+            body.dark-mode & {
+              color: #cbd5e1; // soft gray
+            }
+          }
+        }
+      }
+
+      .education-right {
+        text-align: right;
+
+        .gpa {
+          font-size: 14px;
+          font-weight: bold;
+          color: #334155; // dark slate
+          margin: 0;
+
+          body.dark-mode & {
+            color: #f1f5f9; // light gray
+          }
+        }
+
+        .duration,
+        .location {
+          font-size: 14px;
+          color: #475569;
+          margin: 0;
+
+          body.dark-mode & {
+            color: #cbd5e1;
+          }
+
+          .icon {
+            margin-right: 6px;
+            color: #334155;
+
+            body.dark-mode & {
+              color: #60a5fa; // blue accent
+            }
+          }
+        }
+      }
+    }
+
+    .education-points {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin: 0;
+
+      li {
+        font-size: 14px;
+        color: #334155; // readable slate
+        margin-bottom: 6px;
+
+        body.dark-mode & {
+          color: #e2e8f0; // light gray
+        }
+      }
+    }
+  }
+}

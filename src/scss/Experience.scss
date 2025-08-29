@@ -1,0 +1,145 @@
+.experience-container {
+  background: #ffffff;
+  padding: 70px 80px;
+  text-align: center;
+
+  body.dark-mode & {
+    background: #111827; // dark background
+  }
+
+  .section-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: inline-block;
+    color: #111827; // dark gray text
+
+    body.dark-mode & {
+      color: #f9fafb; // near white
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 80%;
+      height: 3px;
+      background: #2563eb; // blue accent line
+      margin: 8px auto 0;
+      border-radius: 2px;
+
+      body.dark-mode & {
+        background: #60a5fa; // softer blue in dark
+      }
+    }
+  }
+
+  .experience-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .experience-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    color: #1e293b; // slate gray text
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #e5e7eb; // subtle gray border
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+
+    body.dark-mode & {
+      background-color: #1f2937; // slate gray
+      color: #e5e7eb; // light text
+      border-color: #374151; // darker slate border
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      border-color: #8b5cf6; // purple hover accent
+      box-shadow: 0 8px 20px rgba(139, 92, 246, 0.25);
+    }
+
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 15px;
+
+      .experience-left {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .role-company {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+
+          .role {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+            color: #111827;
+
+            body.dark-mode & {
+              color: #f9fafb;
+            }
+          }
+
+          .company {
+            font-size: 14px;
+            color: #475569; // muted slate
+
+            body.dark-mode & {
+              color: #cbd5e1; // light slate
+            }
+          }
+        }
+      }
+
+      .experience-right {
+        text-align: right;
+
+        .duration,
+        .location {
+          font-size: 14px;
+          color: #475569; // muted slate
+          margin: 3px 0;
+
+          body.dark-mode & {
+            color: #cbd5e1;
+          }
+
+          .icon {
+            margin-right: 6px;
+            color: #334155; // dark slate
+
+            body.dark-mode & {
+              color: #93c5fd; // accent blue
+            }
+          }
+        }
+      }
+    }
+
+    .experience-points {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+
+      li {
+        font-size: 14px;
+        color: #334155; // readable slate
+        margin-bottom: 6px;
+
+        body.dark-mode & {
+          color: #e2e8f0; // light gray
+        }
+      }
+    }
+  }
+}
