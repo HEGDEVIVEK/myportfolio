@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.aebda73c.css",
+    "main.js": "/static/js/main.b1e24357.js",
+    "static/js/453.b06fd736.chunk.js": "/static/js/453.b06fd736.chunk.js",
+    "static/media/Vivek.jpeg": "/static/media/Vivek.a9c72bf19bce822637d8.jpeg",
+    "index.html": "/index.html",
+    "main.aebda73c.css.map": "/static/css/main.aebda73c.css.map",
+    "main.b1e24357.js.map": "/static/js/main.b1e24357.js.map",
+    "453.b06fd736.chunk.js.map": "/static/js/453.b06fd736.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aebda73c.css",
+    "static/js/main.b1e24357.js"
+  ]
+}
