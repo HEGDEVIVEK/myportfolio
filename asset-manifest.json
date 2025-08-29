@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.aebda73c.css",
-    "main.js": "/static/js/main.b1e24357.js",
-    "static/js/453.b06fd736.chunk.js": "/static/js/453.b06fd736.chunk.js",
-    "static/media/Vivek.jpeg": "/static/media/Vivek.a9c72bf19bce822637d8.jpeg",
-    "index.html": "/index.html",
-    "main.aebda73c.css.map": "/static/css/main.aebda73c.css.map",
-    "main.b1e24357.js.map": "/static/js/main.b1e24357.js.map",
-    "453.b06fd736.chunk.js.map": "/static/js/453.b06fd736.chunk.js.map"
+    "main.css": "/myportfolio/static/css/main.aebda73c.css",
+    "main.js": "/myportfolio/static/js/main.5d16d579.js",
+    "static/js/453.b06fd736.chunk.js": "/myportfolio/static/js/453.b06fd736.chunk.js",
+    "static/media/Vivek.jpeg": "/myportfolio/static/media/Vivek.a9c72bf19bce822637d8.jpeg",
+    "index.html": "/myportfolio/index.html",
+    "main.aebda73c.css.map": "/myportfolio/static/css/main.aebda73c.css.map",
+    "main.5d16d579.js.map": "/myportfolio/static/js/main.5d16d579.js.map",
+    "453.b06fd736.chunk.js.map": "/myportfolio/static/js/453.b06fd736.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aebda73c.css",
-    "static/js/main.b1e24357.js"
+    "static/js/main.5d16d579.js"
   ]
 }
