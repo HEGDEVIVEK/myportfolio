@@ -89,6 +89,23 @@
   }
 }
 
+/* Mobile hamburger menu */
+.nav-links-mobile {
+  display: flex;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+
+  .toggle-btn {
+    padding: 0.1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
 /* Dark/Light toggle button */
 .dark-toggle {
   background: none;
@@ -105,23 +122,6 @@
     color: #f9fafb;
   }
 }
-
-/* Mobile hamburger menu */
-.nav-links-mobile {
-  display: flex;
-
-  @media (min-width: 1024px) {
-    display: none;
-  }
-
-  .toggle-btn {
-    padding: 0.625rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
 
 /* Mobile Menu */
 .mobile-menu {

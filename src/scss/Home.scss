@@ -23,21 +23,6 @@
   }
 }
 
-.home-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-
-  img {
-    width: 250px;
-    height: 250px;
-    border-radius: 25%;
-    object-fit: cover;
-    border: 1px solid #2563eb;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  }
-}
-
 .home-text {
   flex: 2;
   text-align: center; // everything inside this is centered

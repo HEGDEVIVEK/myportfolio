@@ -1,6 +1,5 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import vivekImage from "../assests/Vivek.jpeg"
 import '../scss/Home.scss';
 
 export default function Home() {
@@ -8,9 +7,9 @@ export default function Home() {
     <div id="home" className="home-container">
       <div className="home-content">
        
-        <div className="home-image">
+        {/* <div className="home-image">
           <img src={vivekImage} alt="Vivek S Hegde" />
-        </div>
+        </div> */}
 
        
         <div className="home-text">
